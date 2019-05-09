@@ -1,1 +1,19 @@
 // Mixins in here
+.center(@justify,@align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.marg(){
+    margin: 0 auto;
+}
+.findMe(){
+    border: 1px solid red;
+}
+.underline(){
+    border-bottom: 2px dashed grey;
+}
+.button(){
+    .findMe();
+    @button-bg;
+}

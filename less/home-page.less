@@ -1,5 +1,15 @@
+.funBus{
+  .center(center, center);
+  img{
+    width: @fit;
+  }
+}
 .home {
-
+  width: @fit;
+  .welcome{
+    .underline();
+  }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -45,6 +55,7 @@
     img {
       border-radius: 10px;
     }
+
   }
 
   .content-pick {
@@ -56,6 +67,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        // .button();
+        @button-bg;
+      }
     }
   }
-}// home
+// home

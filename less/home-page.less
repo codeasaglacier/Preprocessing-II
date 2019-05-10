@@ -1,7 +1,7 @@
 .funBus{
   .center(center, center);
   img{
-    width: @fit;
+    width: 80%;
   }
 }
 .home {
@@ -67,9 +67,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      flex-direction: column;
+      .center(space-evenly,flex-start);
       .btn{
-        // .button();
-        @button-bg;
+        .button(@eastern-blue,@white,center,center,1px solid @silver);
       }
     }
   }

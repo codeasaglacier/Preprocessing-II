@@ -13,7 +13,13 @@
 .underline(){
     border-bottom: 2px dashed grey;
 }
-.button(){
-    .findMe();
-    @button-bg;
+.button(@color,@text,@justify,@align,@border){
+    background: @color;
+    height: 4rem;
+    width: 100%;
+    font-size: 2rem;
+    color:@text;
+    border-radius: 1rem;
+    border: @border;
+    .center(@justify, @align)
 }

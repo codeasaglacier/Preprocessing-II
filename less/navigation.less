@@ -48,15 +48,32 @@
 .headerBox{
     .custom(space-around, center);
     height: 8rem;
+    .navBox{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 50%;
+        @media @mobile{
+            width: 100%;
+        }
+    }
     .navBox a{
-        font-size: 20px;
+        font-size: 2rem;
         text-decoration: none;
-        margin:0 2rem;
         color: black;
+        
     }
     border-bottom: 2px dashed grey;
+    @media @mobile{
+            .center();
+            flex-direction: column;
+     }
 }
 .funBus{
     .center();
+    @media @mobile{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 

@@ -1,24 +1,79 @@
 // Navigation Styles here
 
+// .headerBox{
+//     .marg();
+//     .center(space-between, center);
+//     border-bottom: 2px dashed @silver;
+//     @media @mobile{
+//         flex-direction: column;
+//     }
+//     h1{
+//         .marg();
+//     }
+//     .navBox{
+//         .marg();
+//         .center(space-between,center);
+//         a{
+//             font-size: 1.6rem;
+//             margin: 2rem;
+//             text-decoration: none;
+//             color: @shark;
+//         }
+//     }
+
+// }
+////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////
 .headerBox{
-    .marg();
-    .center(space-between, center);
-    border-bottom: 2px dashed @silver;
-    @media @mobile{
-        flex-direction: column;
-    }
-    h1{
-        .marg();
-    }
+    .custom(space-around, center);
+    height: 8rem;
     .navBox{
-        .marg();
-        .center(space-between,center);
-        a{
-            font-size: 1.6rem;
-            margin: 2rem;
-            text-decoration: none;
-            color: @shark;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 50%;
+        @media @mobile{
+            width: 100%;
         }
     }
-
+    .navBox a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        
+    }
+    border-bottom: 2px dashed grey;
+    @media @mobile{
+            .center();
+            flex-direction: column;
+     }
 }
+.funBus{
+    .center();
+    @media @mobile{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
